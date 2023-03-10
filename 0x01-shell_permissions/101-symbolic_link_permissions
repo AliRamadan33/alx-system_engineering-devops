@@ -1,0 +1,3 @@
+#!/bin/bash
+chmod +x change_owner.sh
+./change_owner.sh
