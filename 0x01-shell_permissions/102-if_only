@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Check if the file hello exists in the working directory
+if [ -f "hello" ]; then
+
+  # Check if the owner of the file is guillaume
+  if [ "$(stat -c '%U' hello)" = "guillaume" ]; then
+
+    # Change the owner of the file to betty
+    chown betty hello
+    echo "The owner of the file hello has been changed to betty."
+
+  else
+    echo "The file hello is not owned by guillaume."
+  fi
+
+else
+  echo "The file hello does not exist in the working directory."
+fi
+
+# End of script.
+
