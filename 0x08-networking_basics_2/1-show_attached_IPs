@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-ifconfig | grep "inet " | tr ":" " " | awk '{print $3}'
+#ihows active ips
+config | grep "inet " | tr ":" " " | awk '{print $3}'
