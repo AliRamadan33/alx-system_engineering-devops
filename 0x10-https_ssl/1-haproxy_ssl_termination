@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+# Bash script displays DNS records: record type, IP, subdomains
